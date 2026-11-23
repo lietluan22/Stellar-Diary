@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stellar Diary — Diário de luz interior</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>⭐ Stellar Diary</h1>
+      <p>Registre a luz do seu dia.</p>
+    </div>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="ghost-button">Alternar tema</button>
+      <button id="export-button" class="ghost-button">Exportar JSON</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Nova entrada</h2>
+
+      <form id="entry-form">
+        <label for="entry-title">Título</label>
+        <input
+          id="entry-title"
+          type="text"
+          placeholder="Como foi o seu dia?"
+          required
+        />
+
+        <label for="entry-mood">Humor</label>
+        <select id="entry-mood">
+          <option value="brilhante">✨ Brilhante</option>
+          <option value="tranquilo">🌿 Tranquilo</option>
+          <option value="neutro">☁️ Neutro</option>
+          <option value="cansado">🌙 Cansado</option>
+          <option value="reflexivo">🌌 Reflexivo</option>
+          <option value="desafiador">⛈️ Desafiador</option>
+        </select>
+
+        <label for="entry-text">Reflexão</label>
+        <textarea
+          id="entry-text"
+          rows="5"
+          placeholder="O que aconteceu hoje? O que você aprendeu?"
+          required
+        ></textarea>
+
+        <label for="entry-gratitude">Gratidão</label>
+        <input
+          id="entry-gratitude"
+          type="text"
+          placeholder="Uma coisa pela qual você é grato(a)"
+        />
+
+        <label for="entry-win">Pequena conquista</label>
+        <input
+          id="entry-win"
+          type="text"
+          placeholder="Algo que você conseguiu fazer hoje"
+        />
+
+        <button type="submit" class="primary-button">Salvar entrada</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="list-header">
+        <h2>Seu diário</h2>
+        <select id="mood-filter">
+          <option value="all">Todos os humores</option>
+          <option value="brilhante">✨ Brilhante</option>
+          <option value="tranquilo">🌿 Tranquilo</option>
+          <option value="neutro">☁️ Neutro</option>
+          <option value="cansado">🌙 Cansado</option>
+          <option value="reflexivo">🌌 Reflexivo</option>
+          <option value="desafiador">⛈️ Desafiador</option>
+        </select>
+      </div>
+
+      <div id="entries-list" class="entries-list"></div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Stellar Diary — feito para guardar os momentos que importam.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
