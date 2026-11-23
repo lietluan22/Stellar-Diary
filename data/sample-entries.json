@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "id": "exemplo-1",
+      "title": "Um dia mais leve",
+      "mood": "tranquilo",
+      "text": "Hoje consegui organizar meus pensamentos e fazer uma pausa sem culpa.",
+      "gratitude": "Pelo café da manhã e por uma conversa boa.",
+      "win": "Terminei uma tarefa que estava adiando.",
+      "createdAt": "2026-11-22T10:00:00.000Z"
+    },
+    {
+      "id": "exemplo-2",
+      "title": "Aprendendo a recomeçar",
+      "mood": "reflexivo",
+      "text": "Nem todo dia precisa ser produtivo. Alguns dias existem para nos lembrar de respirar.",
+      "gratitude": "Pela chance de tentar novamente amanhã.",
+      "win": "Escrevi no meu diário.",
+      "createdAt": "2026-11-21T20:30:00.000Z"
+    }
+  ]
+}
